@@ -10,10 +10,13 @@ python3 main.py
 **
 
 Threshold condition type - 
+
  watch -n 1 "mosquitto_pub -t telemetry/sensor1/temperature -m '{\"value\":25}'"
  
-Conditional condition type
+Conditional condition type - 
+
 mosquitto_pub -t telemetry/sensor2/current -m '{"value":10}'
+
 watch -n 1 "mosquitto_pub -t telemetry/sensor1/temperature -m '{\"value\":25}'"
 
 
